@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../Style/Style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="Menu">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="../Images/Logo FoodBit.JPG" alt="Logo FoodBit" width="350" height="100"/>
+                        </div>
+                    </td>
+                    <td> 
+                        <a href="../index.html" style="color: black;"> Inicio </a> 
+                        |
+                        <a href="../Html/Tracking.html" style="color:black;">Food Tracking</a>
+                        |
+                        <a href="../Html/Locales.html" style="color: black;">Locales Adheridos</a>
+                        |
+                        <a href="../Html/Adhesion.html" style="color: black;">Adherite</a> 
+                        |
+                        <a href="FormularioContacto.html" style="color: black;">Contacto</a>
+                    </td>
+                </tr>
+            </table>
+        </nav> 
+    </header>
+
+    <section>
+        <div id="Cabecera">
+            <h1> Contactate con nosotros</h1>
+            <form action="DatosContacto" method="POST">
+                Nombre y Apellido:<br> 
+                <input type="text" name="Nombre y Apellido" size="60"/>
+                </br>
+                Email:<br>
+                <input type="email" name="Email" size="60"/>
+                </br>
+                Telefono:<br>
+                <input type="tel" name="Telefono" size="30"/>
+                </br>
+                Motivo de Contacto:<br>
+                <select id="Motivo" name="Motivo">
+                    <option value=" " selected="selected">- Selecciona -</option>
+                    <option value="Información">Deseo más Información</option>
+                    <option value="Adhesion">Quiero adherir mi local</option>
+                    <option value="Trabajo">Quiero trabajar con ustedes</option>
+                    <option value="IT">Servicio tecnico</option>
+                    <option value="Otros">Otras consultas</option>
+                </select>
+                </br>
+                Tu Mensaje:<br>
+                <textarea id="Mensaje" name="Tu Mensaje" cols="50" rows="10">Escribe Aqui</textarea>
+                </br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="Empresa">
+            <h5><p> FoodBit SRL <br/>
+                    Mariano Acha 4739, Saavedra.<br/>
+                    Ciudad Autonoma de Buenos Aires (C1430DWQ)<br/>
+                    Telefono: (011)4624-1550<br/>
+                    Web Site Made by CrystalDesing.<br/>
+            </p></h5>
+        </div>       
+    </footer>
+</body>
+</html>
