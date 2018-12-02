@@ -8,26 +8,12 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
-
-table {
-    width: 100%;
+.nav-item {
+    font-size: 20px;
+    background-color: white;
 }
 
-
-.Menu{
-    text-emphasis: emphasis 46px;
-    text-align: left;
-    font-size: 25px;
-}
-
-#Cabecera{
-    background-color: #51e63c;
-    border-color: aqua;
-    padding: 20px;
-    padding-top: 1px;
-}
-
-.Presentacion{
+/*.Presentacion{
     font-size: 35px;
     text-align: center;
     text-transform: capitalize;
@@ -38,11 +24,11 @@ table {
     font-size: 15px;
     text-align: center;
     color: white;
-}
+}*/
 
-#buscador {
+.searchDiv {
     background-color: white;
-    width: 520px;
+    width: 600px;
     border: 10px;
     padding: 40px;
     margin: 50px;
