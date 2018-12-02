@@ -5,75 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../Style/Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Contacto</title>
 </head>
 
 <body>
-    <header>
-        <nav class="Menu">
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <img src="../Images/Logo FoodBit.JPG" alt="Logo FoodBit" width="350" height="100"/>
-                        </div>
-                    </td>
-                    <td> 
-                        <a href="../index.html" style="color: black;"> Inicio </a> 
-                        |
-                        <a href="../Html/Tracking.html" style="color:black;">Food Tracking</a>
-                        |
-                        <a href="../Html/Locales.html" style="color: black;">Locales Adheridos</a>
-                        |
-                        <a href="../Html/Adhesion.html" style="color: black;">Adherite</a> 
-                        |
-                        <a href="FormularioContacto.html" style="color: black;">Contacto</a>
-                    </td>
-                </tr>
-            </table>
-        </nav> 
-    </header>
+  <header>
+    <nav class="Menu">
+      <table>
+        <tr>
+          <td>
+            <div>
+              <img src="../Images/Logo FoodBit.JPG" alt="Logo FoodBit" width="350" height="100"/>
+            </div>
+          </td>
+          <td> 
+            <a href="../index.html" style="color: black;"> Inicio </a> 
+            |
+            <a href="../Html/Tracking.html" style="color:black;">Food Tracking</a>
+            |
+            <a href="../Html/Locales.html" style="color: black;">Locales Adheridos</a>
+            |
+            <a href="../Html/Adhesion.html" style="color: black;">Adherite</a> 
+            |
+            <a href="FormularioContacto.html" style="color: black;">Contacto</a>
+          </td>
+        </tr>
+      </table>
+    </nav> 
+  </header>
 
-    <section>
-        <div id="Cabecera">
-            <h1> Contactate con nosotros</h1>
-            <form action="DatosContacto" method="POST">
-                Nombre y Apellido:<br> 
-                <input type="text" name="Nombre y Apellido" size="60"/>
-                </br>
-                Email:<br>
-                <input type="email" name="Email" size="60"/>
-                </br>
-                Telefono:<br>
-                <input type="tel" name="Telefono" size="30"/>
-                </br>
-                Motivo de Contacto:<br>
-                <select id="Motivo" name="Motivo">
-                    <option value=" " selected="selected">- Selecciona -</option>
-                    <option value="Información">Deseo más Información</option>
-                    <option value="Adhesion">Quiero adherir mi local</option>
-                    <option value="Trabajo">Quiero trabajar con ustedes</option>
-                    <option value="IT">Servicio tecnico</option>
-                    <option value="Otros">Otras consultas</option>
-                </select>
-                </br>
-                Tu Mensaje:<br>
-                <textarea id="Mensaje" name="Tu Mensaje" cols="50" rows="10">Escribe Aqui</textarea>
-                </br>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-    </section>
+  <section>
+    <div id="Cabecera">
+      <form>
+        <fieldset>
+          <legend><h1> Contactate con nosotros</h1></legend>
+            <div class="form-group">
+              <label for="name">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" >
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Telefono:</label>
+              <input type="number" class="form-control" id="phoneNumber">
+            </div>
+            <div class="form-group">
+              <label for="reasonContact">Motivo de Contacto</label>
+              <select class="form-control" id="reasonContact">
+                <option selected="selected">- Selecciona -</option>
+                <option>Deseo más Información</option>
+                <option>Quiero adherir mi local</option>
+                <option>Quiero trabajar con ustedes</option>
+                <option>Servicio tecnico</option>
+                <option>Otras consultas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="Textarea">Tu Mensaje</label>
+              <textarea class="form-control" id="Textarea" rows="3"></textarea>
+            </div>
+          <button type="submit" class="btn btn-outline-success">Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
     
-    <footer id="footer">
-        <div class="Empresa">
-            <h5><p> FoodBit SRL <br/>
-                    Mariano Acha 4739, Saavedra.<br/>
-                    Ciudad Autonoma de Buenos Aires (C1430DWQ)<br/>
-                    Telefono: (011)4624-1550<br/>
-                    Web Site Made by CrystalDesing.<br/>
-            </p></h5>
-        </div>       
-    </footer>
+  <footer id="footer">
+    <div class="Empresa">
+      <h5><small>
+          <p> FoodBit SRL <br/>
+              Mariano Acha 4739, Saavedra.<br/>
+              Ciudad Autonoma de Buenos Aires (C1430DWQ)<br/>
+              Telefono: (011)4624-1550<br/>
+              Web Site Made by CrystalDesing.<br/>
+          </p>
+      </small></h5>
+    </div>       
+  </footer>
 </body>
 </html>
